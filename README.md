@@ -1,10 +1,16 @@
 # blind-exam
 
+![blind-exam](https://raw.githubusercontent.com/kurtstaines/blind-exam/main/docs/assets/banner.png)
+
 [![CI](https://github.com/kurtstaines/blind-exam/actions/workflows/ci.yml/badge.svg)](https://github.com/kurtstaines/blind-exam/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/kurtstaines/blind-exam/blob/main/LICENSE)
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)
 
 **Sit any LLM on a blind exam and get a ranking you can defend.**
+
+![Leaderboard from a real 100-item sample exam run](https://raw.githubusercontent.com/kurtstaines/blind-exam/main/docs/assets/leaderboard.png)
+
+*A real run of the 100-item sample exam: qwen3.8-27b did not beat the momentum baseline; the 95% intervals overlap.*
 
 Most quick model comparisons leak. The model sees earlier questions, a crashed item silently
 drops out of the average, and "70% accurate" hides whether the model knew when it was guessing.
