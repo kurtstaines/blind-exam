@@ -8,6 +8,10 @@
 
 **Sit any LLM on a blind exam and get a ranking you can defend.**
 
+![Writing the sample exam, sitting three baselines, and printing the leaderboard](https://raw.githubusercontent.com/kurtstaines/blind-exam/main/docs/screenshots/demo.gif)
+
+*A real run of the default 40-item sample exam (seed 7): the three built-in baselines, then the leaderboard with 95% intervals.*
+
 ![Leaderboard from a real 100-item sample exam run](https://raw.githubusercontent.com/kurtstaines/blind-exam/main/docs/assets/leaderboard.png)
 
 *A real run of the 100-item sample exam: qwen3.8-27b did not beat the momentum baseline; the 95% intervals overlap.*
@@ -62,6 +66,8 @@ blind-exam make-sample exam/
 blind-exam run exam/ baseline:momentum
 blind-exam board exam/
 ```
+
+The package is not on PyPI. Install it from this repository with the commands above, or with `pip install "git+https://github.com/kurtstaines/blind-exam.git"`.
 
 `board` scores every run under `exam/runs/` and writes `LEADERBOARD.md` and `leaderboard.html`
 there.
